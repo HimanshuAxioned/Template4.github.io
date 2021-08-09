@@ -60,12 +60,21 @@ h1{
 
 h2{
   color: white;
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: 600;
   padding: 5% 0;
 }
 
 h2::first-letter{
   text-transform: capitalize;
+}
+
+h3{
+  color: black;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 900;
+  padding: 8% 0;
 }
 
 /*link*/
@@ -223,5 +232,25 @@ header a:hover{
 
 }
 
+/*section services*/
 
+.services{
+  background: rgb(97, 17, 11);
+}
 
+.service-content{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-align:center;
+  padding: 5% 0;
+}
+
+.service-content li{
+  width: 45% ;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+  margin: 0 1%;
+  padding:2% 1%;
+}
