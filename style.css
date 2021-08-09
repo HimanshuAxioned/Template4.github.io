@@ -52,3 +52,85 @@ table {
   width: 87.5%;
   margin: 0 auto;
 }
+
+/*header*/
+h1{
+  padding: 4%;
+}
+
+/*link*/
+a{
+  text-decoration: none;
+}
+
+/*navigation*/
+
+header{
+  background:rgb(43, 4, 5);
+}
+header::before{
+  content: "";
+  width: 100%;
+  height: 0.5%;
+  background:rgb(126, 196, 141);
+  position: absolute;
+  top: 0;
+}
+.header-content{
+  display: flex;
+  align-items: center;
+}
+
+
+nav{
+  width: 83%;
+  position: relative;
+}
+.nav-list{
+  display: flex;
+  width: 82%;
+  float: right;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list li{
+  width: calc(100%/6);
+  text-align: center;
+ 
+}
+
+
+header a{
+  text-transform: uppercase;
+  color: white;
+  
+  
+}
+
+header a:hover{
+  padding: 7% 8%;
+  border: none;
+  border-radius: 15%;
+  background: rgb(126, 196, 141);
+}
+
+.dropdown{
+  padding: 2.5% 0 ;
+  position: absolute;
+  top:100%;
+  display: none;
+}
+.dropdown li{
+  margin: 5% 0;
+  padding: 1%;
+  border: 1px solid white;
+  border-radius: 5%;
+}
+
+.burger{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  display: none;
+}
