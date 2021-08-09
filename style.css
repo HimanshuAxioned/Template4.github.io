@@ -48,15 +48,13 @@ table {
 }
 
 /*wrapper*/
-.wrapper{
+.wrapper {
   width: 87.5%;
   margin: 0 auto;
 }
 
 /*header*/
-h1{
-  padding: 4%;
-}
+h1 { padding: 4%; }
 
 h2{
   color: white;
@@ -65,9 +63,7 @@ h2{
   padding: 5% 0;
 }
 
-h2::first-letter{
-  text-transform: capitalize;
-}
+h2::first-letter { text-transform: capitalize; }
 
 h3{
   color: black;
@@ -86,6 +82,8 @@ h4{
 /*link*/
 a{
   text-decoration: none;
+  color:rgb(126, 196, 141) ;
+  text-transform: capitalize;
 }
 
 /*paragraph*/
@@ -99,14 +97,16 @@ p{
 header{
   background:rgb(43, 4, 5);
 }
+
 header::before{
   content: "";
   width: 100%;
-  height: 0.6%;
+  padding: 0.6%;
   background:rgb(126, 196, 141);
   position: absolute;
   top: 0;
 }
+
 .header-content{
   display: flex;
   align-items: center;
@@ -117,6 +117,7 @@ nav{
   width: 83%;
   position: relative;
 }
+
 .nav-list{
   display: flex;
   width: 82%;
@@ -125,22 +126,18 @@ nav{
   align-items: center;
 }
 
-.nav-list li{
-  width: calc(100%/6);
-  text-align: center;
- 
-}
+.nav-list li{ text-align: center; }
 
 
 header a{
   text-transform: uppercase;
   color: white;
-  
+  padding: 7% 8%;
   
 }
 
 header a:hover{
-  padding: 7% 8%;
+
   border: none;
   border-radius: 0.5em;
   background: rgb(126, 196, 141);
@@ -321,3 +318,106 @@ header a:hover{
   background: black;
   padding: 1% 0;
 }
+
+/*footer*/
+
+footer{
+  background: rgb(46, 44, 44);
+  
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.footer-content div{
+  width: 40%;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.footer-content h4{
+  padding: 5% 0;
+}
+
+.footer-content div > a{
+  display: inline-block;
+  margin: 5% 0;
+}
+
+.blog a{
+  display: block;
+}
+
+.quick-links-content li{
+  position: relative;
+  padding: 5% 0;
+}
+
+
+
+.quick-links-content li::before{
+  content: ">>";
+  color: rgb(126, 196, 141);
+  padding-right: 5% ;
+}
+
+.quick-links-content a::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.1%;
+  background:rgb(126, 196, 141);
+  bottom: 0;
+  left: 0;
+ 
+}
+
+.latest-tweets a{
+  text-transform: lowercase;
+}
+
+input{
+  width: 80%;
+  margin: 5%;
+  padding:5% ;
+  border: 1px;
+  border-radius: 1em;
+  background: rgb(29, 27, 27);
+}
+
+textarea{
+  width: 80%;
+  margin: 5%;
+  padding:5%;
+  border: 1px;
+  border-radius: 1em;
+  background: rgb(29, 27, 27);
+}
+
+::-webkit-input-placeholder{
+  text-transform: capitalize;
+}
+
+button{
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  border: 1px;
+  border-radius: 1em;
+  padding: 8% 10%;
+  background: rgb(126, 196, 141) ;
+}
+
+.footer-content::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.5%;
+  background:black;
+  bottom: 0;
+  left: 0;
+}
+
